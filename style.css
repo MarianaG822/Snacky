@@ -71,6 +71,7 @@ body {
 
 .sobre_nos:hover {
     text-decoration: underline;
+    color: #005B50;
 }
 
 
@@ -88,6 +89,7 @@ body {
 
 .capacidades:hover {
     text-decoration: underline;
+        colo#005B50;
 }
 
 
@@ -109,6 +111,7 @@ body {
 
 .portfolio:hover {
     text-decoration: underline;
+    color: #005B50;
 }
 
 .menu_servicos {
@@ -597,4 +600,19 @@ body {
     height: 512.47px;
     background-image: url('./img/SERVICOS-2.png');
     
+}
+
+.footer {
+    height: 209px;
+    width: auto;
+    display: flex;
+    background-color: white;
+}
+
+.Logo_Charge_Footer {
+    width: 197.48px;
+    height: 80.88px;
+    margin-left: ;
+    margin-top: 17px;
+    /* border: 1px solid red; */
 }
