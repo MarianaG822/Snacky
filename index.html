@@ -95,19 +95,30 @@
             </div>
         </section>
         <section id="services">
-            <div class="servicos-conteudo">
-                <div class="servicos-left">
+            <div class="servicos-conteudo-up">
+                <div class="servicos-up">
                     <p class="text-servicos"> Serviços </p> 
                     <p class="principal-servicos"> Soluções digitais que impulsionam resultados reais </p>
                     <p class="description-servicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus semper habitant arcu eget. Et integer facilisi eget diam.Lorem ipsum dolor </p>
                     <button class="nos-contate-servicos" onclick="Orcamento()"> Nos contate! </button>
                 </div>
-                <div class="servicos-right"></div> 
-                <div class="servicos-down">
-                    
-                </div>
+                <div class="servicos-up-right">
+                    <img src="./img/SERVICOS-1.png" alt="img-servicos-2" srcset="">
+                </div> 
             </div>
-
+                <div class="servicos-conteudo-down">
+                    <div class="servicos-down-left">
+                        <img src="./img/SERVICOS-2.png" class="img-servicos-2" srcset="">
+                    </div>
+                    <div class="servicos-down-right">
+                        <p class="number1-servicos"> 01 </p>
+                        <p class="text1-servicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus </p>
+                        <p class="number2-servicos"> 02 </p>
+                        <p class="text2-servicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus </p>
+                        <p class="number3-servicos"> 03 </p>
+                        <p class="text3-servicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus in libero risus </p>
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
@@ -131,6 +142,29 @@
                 <p class="texto-2"> Charge LTDA / CNPJ: 01.234.569   /0006-60 / Inscrição Estadual: 00.000.00-0 / Endereço Rua Mario Cordeiro, 25 - Rio de Janeiro, RJ - 00000-000  </p>
             </div>
         </footer>
+        <div id="orcamentoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharOrcamento()">&times;</span>
+            <h2>Solicite um orçamento</h2>
+            <form id="formOrcamento" action="https://formspree.io/f/xgvndoko" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Descreva o que deseja..." required></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+
     </main>
     <script src="script.js"></script>
 </body>
