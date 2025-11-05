@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <llink rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +20,24 @@
 </head>
 <body>
     <header>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <div class="cabecalho">
             <div class="logo">
-                <img class="Logo_Charge" src="/img/LOGO UI CHARGE - BLUE.png" alt="Logo_Charge">
+                <img class="Logo_Charge" src="./img/LOGO UI CHARGE - BLUE.png" alt="Logo_Charge">
             </div>
             <div class="nome_charge"> 
-                <p class="nome_emp"> Charge </h3>
+                <p class="nome_emp"> Charge </p>
             </div>
-            <div class="menu">
+            
+            <button class="menu-hamburger" id="menuHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="menu" id="menuPrincipal">
                 <div class="menu_sobre"> 
                     <a href="#sobre" class="sobre_nos"> Sobre nós </a>
                 </div>
@@ -41,7 +51,7 @@
                     <a href="#services" class="servicos"> Serviços </a>
                 </div>
                 <div class="solicite_orcamento"> 
-                    <button class="sol_orcamento" onclick="Orcamento()">  Solicite um orçamento </button> 
+                    <button class="sol_orcamento" onclick="Orcamento()"> Solicite um orçamento </button> 
                 </div>
             </div>
         </div>
@@ -54,11 +64,13 @@
                 <p class="principal-2">CHARGE,</p>
                 <p class="description-intro"> Criamos soluções digitais que impulsionam negócios e conectam pessoas</p>
                 <p class="subdescription-intro"> O que está esperando? Impulsione sua empresa, dê um Charge.</p>
+                <button class="nos-contate-intro" onclick="Orcamento()"> Nos contate! </button>
             </div>
-            <div class="intro-right"> 
+            <div class="intro-right">
                 <button class="nos-contate-intro" onclick="Orcamento()"> Nos contate! </button>
             </div>
         </div>
+        <button class="nos-contate-intro-mobile" onclick="Orcamento()"> Nos contate! </button>
         <section id="sobre">
             <div class="sobre-conteudo">
                 <div class="sobre-img"></div>
@@ -91,7 +103,7 @@
                         <p class="subdescription-cap-3"> Lorem ipsum dolor sit amet, consecteteu.</p>
                     </div>
                 </div>
-                <button class="nos-contate-capacidades" onclick="Orcamento()"> Nos contate! </button>
+                <!-- <button class="nos-contate-capacidades" onclick="Orcamento()"> Nos contate! </button> -->
             </div>
         </section>
         <section id="services">
@@ -103,7 +115,7 @@
                     <button class="nos-contate-servicos" onclick="Orcamento()"> Nos contate! </button>
                 </div>
                 <div class="servicos-up-right">
-                    <img src="./img/SERVICOS-1.png" alt="img-servicos-2" srcset="">
+                    <img src="./img/SERVICOS-1.png" alt="img-servicos-1" srcset="">
                 </div> 
             </div>
                 <div class="servicos-conteudo-down">
@@ -123,23 +135,24 @@
         </section>
         <footer>
             <div class="rodape">
-                <img src="./img/Mask group.png" class="logo-charge-footer" alt="" srcset="">
+                <!-- <img src="./img/Mask group.png" class="logo-charge-footer" alt="Logo Charge Rodapé" srcset="">  -->
                 <div class="icons-footer"> 
                     <a href="https://facebook.com/chargeoficiall/" target="_blank">
-                        <img src="./img/FACEBOOK_SGV.png" class="svg-footer" alt="">
+                        <img src="./img/FACEBOOK_SGV.png" class="svg-footer" alt="Facebook">
                     </a>
                     <a href="https://whatsapp.com/" target="_blank">
-                        <img src="./img/WHATSAPP_SGV.png" class="svg-footer" alt="">
+                        <img src="./img/WHATSAPP_SGV.png" class="svg-footer" alt="WhatsApp">
                     </a>
                     <a href="https://github.com/" target="_blank">
-                        <img src="./img/GITHUB_SVG.png" class="svg-footer" alt="">
+                        <img src="./img/GITHUB_SVG.png" class="svg-footer" alt="GitHub">
                     </a>
                     <a href="https://instagram.com/chargeoficiall/" target="_blank">
-                        <img src="./img/INSTAGRAM_SVG.png" class="svg-footer" alt="" srcset="">
+                        <img src="./img/INSTAGRAM_SVG.png" class="svg-footer" alt="Instagram" srcset="">
                     </a>
                 </div>
                 <p class="texto-1"> Copyright © 2025. Todos os direitos reservados. </p>
-                <p class="texto-2"> Charge LTDA / CNPJ: 01.234.569   /0006-60 / Inscrição Estadual: 00.000.00-0 / Endereço Rua Mario Cordeiro, 25 - Rio de Janeiro, RJ - 00000-000  </p>
+                <p class="texto-2"> Charge LTDA / CNPJ: 01.234.569 /0006-60 / Inscrição Estadual: 00.000.00-0 / Endereço Rua Mario Cordeiro, 25 - Rio de Janeiro, RJ - 00000-000 </p>
+
             </div>
         </footer>
         <div id="orcamentoModal" class="modal">
@@ -160,10 +173,9 @@
                 <textarea id="mensagem" name="mensagem" placeholder="Descreva o que deseja..." required></textarea>
 
                 <button type="submit" class="btn-enviar">Enviar</button>
-      </form>
+            </form>
+        </div>
     </div>
-  </div>
-
 
     </main>
     <script src="script.js"></script>
