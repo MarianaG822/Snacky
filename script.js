@@ -7,6 +7,11 @@ function fecharOrcamento() {
     document.getElementById("orcamentoModal").style.display = "none";
 }
 
+function fecharPortfolio() {
+    document.getElementById("portfolioModal").style.display = "none";
+}
+
+
 window.onclick = function(event) {
     const modal = document.getElementById("orcamentoModal");
     if (event.target === modal) {
@@ -41,9 +46,7 @@ document.querySelectorAll('.menu a, .menu button').forEach(item => {
     });
 });
 
-// Função de Portfólio (placeholder, já que estava no seu HTML)
+// Função de Portfólio 
 function Portfolio() {
-    alert("Página de Portfólio em breve!");
-    // Adicione a lógica para ir para a página de portfólio se necessário
-    // window.location.href = "/portfolio.html";
+    document.getElementById("portfolioModal").style.display = "block";
 }

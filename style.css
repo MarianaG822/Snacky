@@ -213,6 +213,44 @@ body {
     transition: all 0.3s linear;
 }
 
+/* Portfolio */
+
+#portfolioModal .modal-content {
+    width: 560px;
+    max-width: 90vw;
+    height: auto;
+    max-height: 85vh;      /* evita que ultrapasse a tela */
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Faz o corpo do carousel rolar internamente se for maior que o modal */
+#portfolioModal .carousel-inner {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 8px; /* espaço para rolagem sem cortar */
+}
+
+/* Garante que imagens não estiquem e mantenham proporção */
+#portfolioModal .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: contain; /* ou cover se preferir recortar */
+    display: block;
+}
+
+/* Opcional: melhorar posicionamento das legendas */
+#portfolioModal .carousel-caption {
+    position: static;
+    padding-top: 10px;
+    color: #222;
+    text-align: left;
+    width: 100%;              /* Permite centralização */
+    text-align: center;       /* Centraliza o texto */
+}
+
 
 /* Introdução */
 
@@ -277,6 +315,7 @@ body {
 .hello-intro {
     color: #1B87F0;
     font-family: 'Outfit', sans-serif;
+    font-size: 18pt;
     margin: 30px auto 0;
     text-align: center;
 }
@@ -325,7 +364,7 @@ body {
 .sobre-conteudo {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 40px;
     height: 500px;
     width: auto;
     align-items: center; /* Adicionado */
@@ -353,10 +392,10 @@ body {
 .text-sobre {
     overflow: hidden;
     width: 300px;
-    height: 25px;
+    height: 28px;
     color: #1CAE9C;
     font-family: 'Outfit', sans-serif;
-    font-size: 17pt;
+    font-size: 18pt;
     font-weight: 600;
     text-align: right;
     margin-left: auto;
@@ -367,11 +406,11 @@ body {
     padding: 0;
     margin-left: auto;
     width: 437px;
-    height: 100px;
+    height: 110px;
     color: #1B87F0;
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    font-size: 30pt;
+    font-size: 27pt;
     text-align: right;
     overflow: hidden;
 }
@@ -383,7 +422,7 @@ body {
     font-family: 'Hind', sans-serif;
     margin-top: 50px;
     font-weight: 400;
-    font-size: 13pt;
+    font-size: 15pt;
     text-align: justify;
     overflow: hidden;
 }
@@ -407,7 +446,8 @@ body {
 /* Capacidades */
 
 .capacidades-conteudo {
-    margin-top: 50px;
+
+    margin-top: 4   0px;
     background-color: #E4FCFF;
     height: 531px;
     width: auto;
@@ -435,14 +475,14 @@ body {
     font-weight: 600;
     text-align: center;
     width: 621px;
-    height: 77.2px;
+    height: 90px;
     overflow: hidden;
 }
 
 .description-capacidades {
     display: flex;
     flex-direction: row;
-    margin-top: 89px;
+    margin-top: 40px;
     width: auto;
     height: 179px;
     overflow: hidden;
@@ -452,7 +492,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 192px;
+    width: 220px;
     height: 178.39px;
 }
 
@@ -468,13 +508,14 @@ body {
     bottom: 0;
     color: #333333;
     font-family: 'Outfit', sans-serif;
+    font-size: 14pt;
     font-weight: 500;
 }
 
 .subdescription-cap-1 {
     font-family: 'Hind', sans-serif;
     text-align: center;
-    font-size: 12pt;
+    font-size: 13pt;
     color: #333333;
 }
 
@@ -482,7 +523,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 192px;
+    width: 220px;
     height: 178.39px;
     margin-left: 165px;
     margin-right: 165px;
@@ -500,13 +541,14 @@ body {
     bottom: 0;
     color: #333333;
     font-family: 'Outfit', sans-serif;
+    font-size: 14pt;
     font-weight: 500;
 }
 
 .subdescription-cap-2 {
     font-family: 'Hind', sans-serif;
     text-align: center;
-    font-size: 12pt;
+    font-size: 13pt;
     color: #333333;
 }
 
@@ -514,7 +556,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 192px;
+    width: 220px;
     height: 178.39px;
 }
 
@@ -526,6 +568,7 @@ body {
 .description-cap-3 {
     margin-top: auto;
     margin-bottom: 5px;
+    font-size: 14pt;
     bottom: 0;
     color: #333333;
     font-family: 'Outfit', sans-serif;
@@ -535,7 +578,7 @@ body {
 .subdescription-cap-3 {
     font-family: 'Hind', sans-serif;
     text-align: center;
-    font-size: 12pt;
+    font-size: 13pt;
     color: #333333;
 }
 
@@ -566,7 +609,7 @@ body {
 }
 
 .servicos-up {
-    width: 494px;
+    width: 600px;
     height: auto; /* Alterado */
     margin-top: 0; /* Alterado */
     margin-left: 7%;
@@ -586,13 +629,14 @@ body {
     text-align: left;
     margin-right: auto;
     right: 0;
+    overflow: hidden;
 }
 
 .principal-servicos {
     padding: 0;
     margin-right: auto;
-    width: 486px;
-    height: 140px;
+    width: 487px;
+    height: 160px;
     color: #ffffff;
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
@@ -669,7 +713,7 @@ body {
     right: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .number1-servicos, .number2-servicos, .number3-servicos {
