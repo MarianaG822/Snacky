@@ -26,9 +26,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <div class="cabecalho">
+            <a href="#intro">
             <div class="logo">
                 <img class="Logo_Charge" src="./img/LOGO UI CHARGE - BLUE.png" alt="Logo_Charge">
             </div>
+            </a>
             <div class="nome_charge"> 
                 <p class="nome_emp"> Charge </p>
             </div>
@@ -59,6 +61,7 @@
         </div>
     </header>
     <main>
+        <section id="intro"></section>
         <div class="intro">
             <div class="intro-left">
                 <p class="hello-intro"> Olá,</p>
@@ -198,6 +201,27 @@
 
             </div>
         </footer>
+
+        <div id="orcamentoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharOrcamento()">&times;</span>
+            <h2>Solicite um orçamento</h2>
+            <form id="formOrcamento" action="https://formspree.io/f/xgvndoko" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" />
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Descreva o que deseja..." required></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
     </main>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

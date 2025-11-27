@@ -759,6 +759,7 @@ footer {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 
@@ -784,6 +785,7 @@ footer {
     text-align: center;
     font-family: 'Hind', sans-serif;
     color: #9BA4AF;
+    margin-top: -10px;
     font-size: 10pt;
 }
     
@@ -817,6 +819,8 @@ footer {
 }
 
 .modal-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     text-align: center;
     color: #1B87F0;
     margin-bottom: 20px;
@@ -875,6 +879,17 @@ footer {
 .close:hover {
     color: #000;
 }
+
+#orcamentoModal .modal-content {
+    width: 560px;
+    max-width: 75vw;
+    height: auto;
+    max-height: 95vh;      /* evita que ultrapasse a tela */
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 20px;
+}
+
 
 
 /* ================================================== */

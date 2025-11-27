@@ -7,6 +7,10 @@ function fecharOrcamento() {
     document.getElementById("orcamentoModal").style.display = "none";
 }
 
+function Portfolio() {
+    document.getElementById("portfolioModal").style.display = "block";
+}
+
 function fecharPortfolio() {
     document.getElementById("portfolioModal").style.display = "none";
 }
@@ -46,7 +50,3 @@ document.querySelectorAll('.menu a, .menu button').forEach(item => {
     });
 });
 
-// Função de Portfólio 
-function Portfolio() {
-    document.getElementById("portfolioModal").style.display = "block";
-}
